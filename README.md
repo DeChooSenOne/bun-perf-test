@@ -26,4 +26,4 @@ measuring the time it takes to complete the task.
 
 ## Small guide
 To run the tests, you can run the following commands:
-- `npm run cpu` -> This command will run the CPU-bound task test.
+- `npm run index.ts` -> This command will run the bound task tests.
