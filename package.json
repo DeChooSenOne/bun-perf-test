@@ -2,13 +2,15 @@
   "name": "perf-test",
   "module": "index.ts",
   "type": "module",
+  "scripts": {
+    "time": "bun run index.ts",
+    "test-cpu": "./bombardier-windows-amd64.exe -c 3000 -d 60s -l http://localhost:3001/cpu-intensive",
+    "test-io": "./bombardier-windows-amd64.exe -c 3000 -d 60s -l http://localhost:3001/io-intensive"
+  },
   "devDependencies": {
     "@types/bun": "latest"
   },
   "peerDependencies": {
     "typescript": "^5.0.0"
-  },
-  "dependencies": {
-    "autocannon": "^7.15.0"
   }
 }
